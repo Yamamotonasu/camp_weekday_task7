@@ -9,6 +9,19 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= yield %>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+　    <h1>我輩は論文である。</h1>
+      <p>我輩は論文である。論文はまだ無い。</p>
+    </div>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 my-4 pr-5 mr-5">
+          <%= yield %>
+        </div>
+        <div class="col-md-1 bg-dark">
+        </div>
+      </div>
+    </div>    
   </body>
 </html>
